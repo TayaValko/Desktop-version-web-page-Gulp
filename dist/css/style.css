@@ -1,0 +1,274 @@
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+@font-face {
+  font-family: 'Morganite';
+  src: url("../font/font/Morganite/Morganite-Bold.ttf");
+  src: local("Morganite Bolt"), local("Morganite-Bolt"), url("../font/Morganite/Morganite-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url("../font/font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Bold PERSONAL USE.otf");
+  src: local("MADE Outer Sans Bold PERSONAL USE"), local("MADE Outer Sans Bold PERSONAL USE"), url("../font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Bold PERSONAL USE.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url("../font/font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Thin PERSONAL USE.otf");
+  src: local("MADE Outer Sans Thin PERSONAL USE"), local("MADE Outer Sans Thin PERSONAL USE"), url("../font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Thin PERSONAL USE.otf") format("opentype");
+  font-weight: 250;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url("../font/font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Black PERSONAL USE.otf");
+  src: local("MADE Outer Sans Black PERSONAL USE"), local("MADE Outer Sans Black PERSONAL USE"), url("../font/MADE Outer Sans PERSONAL USE/MADE Outer Sans Black PERSONAL USE.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal; }
+
+* {
+  font-family: 'MADE Outer Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  transition: all .2s ease-in; }
+
+button {
+  outline: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: #000000;
+  background-image: url("../img/grunge-texture.png");
+  height: 100vh; }
+
+.container {
+  margin: 0px auto; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 54px 60px;
+  width: 100%;
+  margin: 0px auto; }
+  .header__logo img {
+    width: 100%; }
+  .header__burger-menu {
+    display: flex;
+    height: 18px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    .header__burger-menu span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 60px;
+      background: #F7F5F9;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      .header__burger-menu span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center; }
+      .header__burger-menu span:nth-child(2) {
+        top: 7px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center; }
+      .header__burger-menu span:nth-child(3) {
+        top: 16px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left; }
+  .header__list {
+    -ms-flex-pack: distribute;
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-right: auto; }
+    .header__list li {
+      padding-left: 40px; }
+      .header__list li a {
+        text-decoration: none;
+        font-family: "MADE Outer Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F7F5F9; }
+  .header__contact {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto; }
+    .header__contact .string {
+      font-family: "MADE Outer Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: #F7F5F9;
+      padding-left: 60px; }
+    .header__contact .shop-bag {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative; }
+      .header__contact .shop-bag .meter {
+        position: absolute;
+        top: -13px;
+        right: -15px;
+        background-image: url(../img/meter.svg);
+        background-repeat: no-repeat;
+        z-index: 5;
+        width: 25px;
+        height: 23px;
+        font-size: 12px;
+        line-height: 15px;
+        color: #E50012;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .header__contact .lang {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative; }
+      .header__contact .lang li {
+        padding-right: 8px;
+        list-style: none; }
+        .header__contact .lang li a {
+          color: rgba(255, 255, 255, 0.3);
+          text-decoration: none;
+          list-style: none; }
+        .header__contact .lang li:last-child {
+          padding-right: 0px; }
+        .header__contact .lang li.active a {
+          color: #F7F5F9; }
+
+.quest {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0 60px 50px;
+  width: 100%;
+  margin: 0px auto;
+  flex-wrap: wrap; }
+  .quest__item {
+    width: 350px;
+    height: 800px;
+    position: relative;
+    color: #F7F5F9;
+    margin-bottom: 15px; }
+    .quest__item::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%); }
+  .quest__image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: none; }
+  .quest__deal {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/tape.svg);
+    z-index: 5;
+    background-size: cover;
+    width: 104%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: -5px;
+    top: 27px;
+    padding: 15px 20px; }
+    .quest__deal .off {
+      font-family: 'Morganite', sans-serif;
+      font-size: 56px;
+      line-height: 56px;
+      text-transform: uppercase; }
+    .quest__deal .time-holder {
+      text-align: right; }
+      .quest__deal .time-holder__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 250; }
+      .quest__deal .time-holder__time {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 23px; }
+  .quest__content {
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    max-width: 250px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .quest__content .name {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 20px; }
+    .quest__content .type {
+      font-weight: 250;
+      font-size: 14px;
+      line-height: 24px; }
+      .quest__content .type .fa-mask {
+        margin: 0px auto;
+        position: relative;
+        margin-left: 10px;
+        vertical-align: middle; }
+        .quest__content .type .fa-mask:before {
+          content: "";
+          margin: 0px auto;
+          position: relative;
+          display: block;
+          background-image: url("../img/Mask.svg");
+          background-repeat: no-repeat;
+          width: 28px;
+          height: 28px; }
